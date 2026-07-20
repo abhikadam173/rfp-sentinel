@@ -1,0 +1,24 @@
+services:
+  qdrant:
+    image: qdrant/qdrant:latest
+    container_name: rfp-sentinel-qdrant
+    ports:
+      - "6333:6333"
+    volumes:
+      - qdrant_data:/qdrant/storage
+
+  postgres:
+    image: postgres:16
+    container_name: rfp-sentinel-postgres
+    environment:
+      POSTGRES_USER: rfp_sentinel
+      POSTGRES_PASSWORD: rfp_sentinel
+      POSTGRES_DB: rfp_sentinel
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+volumes:
+  qdrant_data:
+  postgres_data:

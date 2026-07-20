@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+.venv/
+venv/
+.env
+
+data/bids/**
+!data/bids/.gitkeep
+
+.DS_Store
