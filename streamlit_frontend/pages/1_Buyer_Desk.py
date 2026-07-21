@@ -3,9 +3,9 @@ import streamlit as st
 from shared.theme import inject_theme, render_letterhead, render_results, render_disclaimer
 from shared.api_client import check_rfp, evaluate_bid, ApiError
 
-st.set_page_config(page_title="Evaluator Desk — RFP Sentinel", page_icon="🛡️", layout="centered")
+st.set_page_config(page_title="Buyer Desk — RFP Sentinel", page_icon="🛡️", layout="centered")
 inject_theme()
-render_letterhead("Procurement Compliance Desk", role="Evaluator")
+render_letterhead("Procurement Compliance Desk", role="Buyer")
 
 tab_rfp, tab_bid = st.tabs(["RFP Compliance Check", "Bid Evaluation"])
 
