@@ -1,4 +1,28 @@
 {
-  "_comment": "Maps each norm PDF filename (placed in this folder) to its metadata. Filled in as documents are added — see M6 in the plan.",
-  "documents": []
+  "_comment": "Maps each norm PDF filename (placed in this folder) to its metadata. doc_id in Qdrant is derived as slug(norm_name)_version, so version must change whenever a document is superseded.",
+  "documents": [
+    {
+      "filename": "GeM-GTC-40-1741175351.pdf",
+      "norm_name": "GeM General Terms and Conditions",
+      "status": "active",
+      "version": "4.0.1.23",
+      "effective_date": "2025-03-05"
+    },
+    {
+      "filename": "Handbook_Testing.pdf",
+      "norm_name": "MeitY CRS Applicant Handbook",
+      "status": "active",
+      "version": null,
+      "effective_date": null,
+      "_verify": "No version/date found in the document itself or via web search (checked crsbis.in, meity.gov.in). Covers Phase-I CRS product categories only (15 categories from the 2012 order) — later CRS phases (II-VII) added more categories not covered here."
+    },
+    {
+      "filename": "Public Procurement Policy for Micro and Small Enterprises (MSEs) Order, 2012.pdf",
+      "norm_name": "MSME Public Procurement Policy Order",
+      "status": "active",
+      "version": "2012",
+      "effective_date": "2012-04-01",
+      "_verify": "This is only the original 2012 base order. Confirmed via the official Gazette (S.O. 5670(E), 9 Nov 2018) that a 2018 Amendment Order changed the procurement target from 20% to 25% and added a 3% women-owned-MSE sub-target, effective 1 April 2019 — not yet sourced/ingested as a separate document. See ROADMAP.md."
+    }
+  ]
 }

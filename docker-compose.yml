@@ -2,6 +2,7 @@ services:
   qdrant:
     image: qdrant/qdrant:latest
     container_name: rfp-sentinel-qdrant
+    restart: unless-stopped
     ports:
       - "6333:6333"
     volumes:
@@ -10,6 +11,7 @@ services:
   postgres:
     image: postgres:16
     container_name: rfp-sentinel-postgres
+    restart: unless-stopped
     environment:
       POSTGRES_USER: rfp_sentinel
       POSTGRES_PASSWORD: rfp_sentinel

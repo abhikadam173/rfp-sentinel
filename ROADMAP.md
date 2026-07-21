@@ -2,6 +2,13 @@
 
 Deferred scope, tracked deliberately so it's not forgotten — not a backlog to pull from early.
 
+## Norm data follow-ups (near-term, not blocking current milestone)
+
+- Source and ingest the **MSME Public Procurement Policy (MSEs) Amendment Order, 2018** (Gazette S.O. 5670(E), 9 Nov 2018) as its own document — changes the procurement target from 20% to 25% and adds a 3% women-owned-MSE sub-target, effective 1 April 2019. Currently only the unamended 2012 base order is ingested (flagged in `data/norms/manifest.json`). The copy found during research was a poor-quality OCR scan (page 1's bilingual header extracted as garbled text) — worth finding a cleaner digital-native source, or handling as a v2+ OCR case if not.
+- Periodically re-check GeM GTC for a newer version (we caught 1.22 → 1.23 by chance while researching manifest metadata, not via any monitoring — there's no mechanism that would catch this automatically, by design, since the project doesn't crawl/poll GeM's servers).
+- Still missing from the original 6-category norm list: GFR 2017 Rule 189, the DPIIT Make-in-India order, a dedicated BIS CRS list.
+- **Policy to define later**: once the superseded-status mechanism (keep old norm versions, flip `status` instead of deleting) is actually in use for real evaluations, decide a retention rule for eventually removing old superseded PDFs from the `data/norms/` working folder (Qdrant's superseded *points* stay for audit regardless — this is only about whether the source PDF file itself needs to stick around locally indefinitely).
+
 ## v1.1
 
 - Credential-based auth with three roles: Buyer, Admin, Bidder.
