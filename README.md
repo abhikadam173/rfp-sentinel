@@ -3,6 +3,7 @@
 A RAG-based bid-evaluation co-pilot for GeM (Government e-Marketplace) Technical Evaluators, scoped to the **Electronics category**. It serves the **buyer/evaluator side** of government procurement — every commercial RFP-AI tool on the market serves bidders responding to tenders; this is the other side of that transaction, a gap in the market.
 
 <img width="1920" height="925" alt="image" src="https://github.com/user-attachments/assets/67c1c3d5-fa5d-4ad4-abef-d9c7a15bff84" />
+<img width="1920" height="925" alt="image" src="https://github.com/user-attachments/assets/1c7aa3a2-8ec6-42e9-9060-bbd0ad67d606" />
 <img width="1920" height="925" alt="image" src="https://github.com/user-attachments/assets/7067c59d-22d3-4514-a54a-95d8f30c4e5d" />
 <img width="1920" height="925" alt="Screenshot from 2026-07-21 23-44-49" src="https://github.com/user-attachments/assets/eff4c7bf-ad7a-4f69-8262-173019011d2d" />
 
