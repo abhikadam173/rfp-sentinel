@@ -2,6 +2,11 @@
 
 A RAG-based bid-evaluation co-pilot for GeM (Government e-Marketplace) Technical Evaluators, scoped to the **Electronics category**. It serves the **buyer/evaluator side** of government procurement — every commercial RFP-AI tool on the market serves bidders responding to tenders; this is the other side of that transaction, a gap in the market.
 
+<img width="1920" height="925" alt="image" src="https://github.com/user-attachments/assets/67c1c3d5-fa5d-4ad4-abef-d9c7a15bff84" />
+<img width="1920" height="925" alt="image" src="https://github.com/user-attachments/assets/7067c59d-22d3-4514-a54a-95d8f30c4e5d" />
+<img width="1920" height="925" alt="Screenshot from 2026-07-21 23-44-49" src="https://github.com/user-attachments/assets/eff4c7bf-ad7a-4f69-8262-173019011d2d" />
+
+
 A buyer uploads an RFP/tender PDF. The system extracts its requirements, checks them against a knowledge base of real government procurement norms (GeM's General Terms & Conditions, the MSME Public Procurement Policy, MeitY's CRS handbook), flags anything that conflicts with those norms with a citation, and pauses for a human to review before anything is published.
 
 ## Current status (v1, in progress)
