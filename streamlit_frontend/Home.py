@@ -12,9 +12,9 @@ st.caption("No login yet (v1.1 will add role-based auth) — use the sidebar, or
 
 col1, col2, col3 = st.columns(3)
 with col1:
-    st.markdown("**Evaluator**")
+    st.markdown("**Buyer**")
     st.caption("Check a draft RFP against norms, or evaluate a bid against an RFP.")
-    st.page_link("pages/1_Evaluator_Desk.py", label="Open Evaluator Desk →")
+    st.page_link("pages/1_Buyer_Desk.py", label="Open Buyer Desk →")
 with col2:
     st.markdown("**Admin**")
     st.caption("Norm-document management and oversight.")
